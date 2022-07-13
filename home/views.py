@@ -11,5 +11,8 @@ def about(request):
    return render(request,'about.html')
 def events(request):
     return render(request,'events.html')
-
+def register(request):
+    return render(request,'register.html')
+def contact(request):
+    return render(request,'contacts.html')
     

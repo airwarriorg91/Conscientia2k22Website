@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conscientia</title>
+    <link rel="stylesheet" href="{% static '/layout/header.css'%}">
+  </head>
+  <body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <header id="header">
+      <nav>
+        <div class="container">
+          <h1>Conscientia</h1>
+          <div class="menu">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/events">Events</a>
+            <a href="/register">Register</a>
+            <a href="/contact">Contact</a>
+          </div>
+          <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          </button>
+        </div>
+      </nav>
+      <nav class="mobile-nav">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/events">Events</a>
+        <a href="/register">Register</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      </header><!-- /header -->
+      <main>
+        <div class="row">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </main>
+      <script src="static/layout/header.js"></script>
+    </body>
+  </html>
