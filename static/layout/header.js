@@ -4,13 +4,9 @@ hamburger.addEventListener('click', function(){
     this.classList.toggle('is-active');
 });
 
-window.onload=function(){
-    window.addEventListener('scroll', function(e){
-        if(window.PageYOffset >100){
-            document.querySelector("menu").classList.add('is-scrolling');
-        }else{
-            document.querySelector("menu").classList.remove('is-scrolling');
-        }
+window.addEventListener('scroll', function(){
+        var header = document.querySelector("nav");
+        header.classList.toggle("sticky", window.scrollY>0);
     });
 
     const menu_btn = document.querySelector('.hamburger');
@@ -19,6 +15,13 @@ window.onload=function(){
     menu_btn.addEventListener('click', function(){
         menu_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
-    })
-};
+    });
 
+let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        preloader.remove()
+      }, 100);
+    });
+  }

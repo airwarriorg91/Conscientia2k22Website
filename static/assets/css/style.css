@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 20px;
-  border-radius: 2px;
+  border-radius: 99px;
   transition: 0.5s;
   margin: 5px;
 }
@@ -175,20 +175,24 @@ h1, h2, h3, h4, h5, h6 {
   background: #8C4A2D;
   border: 2px solid #fff;
   color: #fff;
+  border-radius: 99px;
 }
 #hero .btn-get-started:hover {
   background: #E77D11;
   border: 2px solid #fff;
   color: #fff;
+  border-radius: 10px;
 }
 #hero .btn-services {
   border: 2px solid #fff;
   background: #8C4A2D;
   color: #fff;
+  border-radius: 10px;
 }
 #hero .btn-services:hover {
   background: #E77D11;
-  border: 2px solid ,#fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
 }
 .myiframe {
   width:100% ; 
