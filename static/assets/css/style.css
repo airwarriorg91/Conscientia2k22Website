@@ -167,9 +167,9 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 20px;
-  border-radius: 99px;
   transition: 0.5s;
   margin: 5px;
+  border-radius: 99px;
 }
 #hero .btn-get-started {
   background: #8C4A2D;
@@ -181,18 +181,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #E77D11;
   border: 2px solid #fff;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 #hero .btn-services {
   border: 2px solid #fff;
   background: #8C4A2D;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 99px;
 }
 #hero .btn-services:hover {
   background: #E77D11;
   border: 2px solid #fff;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .myiframe {
   width:100% ; 

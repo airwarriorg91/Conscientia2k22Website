@@ -1,9 +1,3 @@
-const hamburger = document.querySelector(".hamburger");
-
-hamburger.addEventListener('click', function(){
-    this.classList.toggle('is-active');
-});
-
 window.addEventListener('scroll', function(){
         var header = document.querySelector("nav");
         header.classList.toggle("sticky", window.scrollY>0);
