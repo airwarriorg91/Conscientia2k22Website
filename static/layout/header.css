@@ -150,9 +150,22 @@ h1{
 .menu a.is-active{
     background-color: var(--primary);
 }
+.menu a.is-active:hover{
+    background-color: var(--primary);
+    color: #FFF;
+}
 
 .menu a:hover{
     color: #E77D11;
+}
+
+.menu a.login-button{
+    background-color: #E77D11;
+}
+
+.menu a.login-button:hover{
+    background-color: var(--primary);
+    color:#FFF;
 }
 
 #preloader {
@@ -231,6 +244,7 @@ ul li a{
     font-family: ACT;
     text-decoration: none;
     color: #fff;
+    font-size: 14px;
 }
 
 .social-icons .fa-solid, .social-icons .fa-brands{
