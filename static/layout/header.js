@@ -11,11 +11,8 @@ window.addEventListener('scroll', function(){
         mobile_menu.classList.toggle('is-active');
     });
 
-let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        preloader.remove()
-      }, 100);
-    });
-  }
+var preloader = document.querySelector("#preloader");
+window.addEventListener("load", function() {
+    //hide the preloader
+    preloader.style.display = "none";
+});
