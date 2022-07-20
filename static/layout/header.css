@@ -139,12 +139,13 @@ h1{
 
 .menu a{
     color:#FFF;
-    margin: 0 16px;
+    margin: 0 10px;
     font-weight:600;
     text-decoration: none;
     transition: 0.4s;
-    padding: 8px 16px;
+    padding: 8px 8px;
     border-radius: 99px;
+    font-size: 14px;
 }
 
 .menu a.is-active{
@@ -160,12 +161,37 @@ h1{
 }
 
 .menu a.login-button{
-    background-color: #E77D11;
+    color: var(--primary);
+    background-color: #fff;
 }
 
 .menu a.login-button:hover{
+    color: #E77D11;
+    background-color: #fff;
+}
+
+.menu a:nth-child(4){
+    margin-right: 30px;
+}
+
+.menu a:nth-child(5){
+    color: var(--primary);
+    background-color: #fff;
+    margin-right: 6px;
+}
+
+.menu a:nth-child(5):hover{
+    color: #E77D11;
+    background-color: #fff;
+}
+
+.menu a:nth-child(5).is-active{
+    color: #fff;
     background-color: var(--primary);
-    color:#FFF;
+}
+.menu a:nth-child(5).is-active:hover{
+    color: #fff;
+    background-color: var(--primary);
 }
 
 #preloader {
