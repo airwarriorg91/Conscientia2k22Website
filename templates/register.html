@@ -1,37 +1,22 @@
 {% extends "header.html" %}
 {% load static %}
-
 {% block menu_register_class %}is-active{% endblock %}
 {% block menu_register_class1 %}is-active{% endblock %}
 {% block content %}
-  
-<div class="form-style-10">
-<h1>Register for the events!<span></span></h1>
-<form>
-    <div class="section"><span>1</span>First Name & Address</div>
-    <div class="inner-wrap">
-        <label>Your Full Name <input type="text" name="field1" /></label>
-        <label>Address <textarea name="field2"></textarea></label>
+    
+    <div class="form">
+        <h1 class="formh1">Register <div class="underline"><span></span></h1>
+        <p class="formp">Register yourself for Conscientia 2k22 and participate in the various events and workshops.</p>
+        <div class="formgroup">
+            <input type="text" id="email" class="forminput" autocomplete="off" placeholder=" ">
+            <label for="email" class="formlabel">Email</label>
+        </div>
+        <div class="formgroup">
+            <input type="text" id="password" class="forminput" autocomplete="off" placeholder=" ">
+            <label for="password" class="formlabel">Password</label>
+        </div>
+        <button class="signup">
+            Proceed
+        </button>
     </div>
-
-    <div class="section"><span>2</span>Email & Phone</div>
-    <div class="inner-wrap">
-        <label>Email Address <input type="email" name="field3" /></label>
-        <label>Phone Number <input type="text" name="field4" /></label>
-    </div>
-
-    <div class="section"><span>3</span>Password</div>
-        <div class="inner-wrap">
-        <label>Password <input type="password" name="field5" /></label>
-        <label>Confirm Password <input type="password" name="field6" /></label>
-    </div>
-    <div class="button-section">
-     <input type="submit" name="Sign Up" />
-     <span class="privacy-policy">
-     <input type="checkbox" name="field7">You agree to our Terms and Policy. 
-     </span>
-    </div>
-</form>
-</div>
-
 {% endblock %}

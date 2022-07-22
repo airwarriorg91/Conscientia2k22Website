@@ -8,12 +8,15 @@
     <title>Conscientia</title>
     <link rel="stylesheet" href="{% static '/layout/header.css'%}">
     <script src="https://kit.fontawesome.com/9dde0b24ee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
     <header id="header">
       <nav>
         <div class="container">
-          <img src="/static/logo_web1.png" alt="" style="height: 40px; margin:0px; padding:0px">         
+          <img src="/static/logo_web1.png" alt="" style="height: 40px; margin:0px; padding:0px">
           <div class="menu">
             <a href="/">Home</a>
             <a href="/about" class="{% block menu_about_class %}{% endblock %}">About</a>
@@ -38,53 +41,50 @@
         <a href="#" class="login-button">Login</a>
       </nav>
       </header><!-- /header -->
-
       <main>
         <div class="main-container">
           {% block content %}
           {% endblock %}
         </div>
       </main>
-
       <footer>
-         <div class="row">
-           <div class="col">
-                <img src="/static/logo_web.png" class="logo">
-                <p>Conscientia is an annual technical and astronomical festival organized by IIST.</p>
-             
-           </div>
-           <div class="col">
-              <h3>Visit Us <div class="underline"><span></span></div></h3>
-              <p>Indian Institute of Space Science and Technology</p>
-              <p>Valiamala, Trivandrum</p>
-              <p>Kerela, PIN-695547, India</p>
-              <p class="email">conscientia@iist.ac.in</p>
-           </div>
-           <div class="col">
-              <h3> Links <div class="underline"><span></span></div></h3>
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/events">Events</a></li>
-                <li><a href="/register">Register</a></li>
-                <li><a href="/contact">Contact</a></li>
-              </ul>             
-           </div>
-           <div class="col">
-              <h3> Reach us <div class="underline"><span></span></div></h3>
-              <div class="social-icons">
-                  <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                  <a href="https://www.facebook.com/Conscientia.iist"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/conscientia.iist/"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="https://www.youtube.com/channel/UCwgcWo-ash4KC4z8_5e9Haw"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-             
-           </div>
-         </div>
-         <hr>
-         <p class="copyright">Conscientia 2022 - All Rights Reserved</p>
+        <div class="row">
+          <div class="col">
+            <img src="/static/logo_web.png" class="logo">
+            <p>Conscientia is an annual technical and astronomical festival organized by IIST.</p>
+            
+          </div>
+          <div class="col">
+            <h3>Visit Us <div class="underline"><span></span></div></h3>
+            <p>Indian Institute of Space Science and Technology</p>
+            <p>Valiamala, Trivandrum</p>
+            <p>Kerela, PIN-695547, India</p>
+            <p class="email">conscientia@iist.ac.in</p>
+          </div>
+          <div class="col">
+            <h3> Links <div class="underline"><span></span></div></h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/register">Register</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3> Reach us <div class="underline"><span></span></div></h3>
+            <div class="social-icons">
+              <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.facebook.com/Conscientia.iist"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/conscientia.iist/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCwgcWo-ash4KC4z8_5e9Haw"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Conscientia 2022 - All Rights Reserved</p>
       </footer>
       <script src="static/layout/header.js"></script>
     </body>
   </html>
-
