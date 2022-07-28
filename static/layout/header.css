@@ -351,12 +351,6 @@ hr{
     }
 }
 
-@media (max-width: 768px){
-    .col{
-        flex-basis: 100%;
-        margin-bottom:10px;
-    }
-}
 
 .form{
     position: relative;
@@ -533,7 +527,6 @@ hr{
     color:#FFF;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
     text-align: justify;
     width: fit-content;
     margin-bottom: 13px;
@@ -563,6 +556,7 @@ hr{
     margin-bottom:45px;
     margin-top: 20px;
 }
+
 .eventitematext{
     grid-column: 1;
     background-color: rgba();
@@ -573,7 +567,6 @@ hr{
     padding:20px;
     margin-bottom:45px;
     margin-top: 20px;
-    background-color: #00ffff10;
 }
 .eventitemb{
     grid-column: 2;
@@ -592,7 +585,6 @@ hr{
     height: 60vh;
     justify-content: center;
     flex-direction: column;
-    background-color: #00ffff10;
     padding:20px; 
     margin-bottom:45px;
     margin-top: 20px;
@@ -652,4 +644,11 @@ hr{
     margin-right: 15px;
     margin-bottom: 13px;
     cursor: none;
+}
+
+@media (max-width: 768px){
+    .col{
+        flex-basis: 100%;
+        margin-bottom:10px;
+    }
 }
