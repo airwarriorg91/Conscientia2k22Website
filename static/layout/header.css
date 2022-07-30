@@ -646,9 +646,40 @@ hr{
     cursor: none;
 }
 
+.eventscontainermobile{
+    display: none;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    width:90%;
+    margin:10px;
+    padding:10px 0px;
+}
+
+.eventsboxmobile{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    margin:20px 0px;   
+}
+
 @media (max-width: 768px){
     .col{
         flex-basis: 100%;
         margin-bottom:10px;
+    }
+
+    .eventscontainer{
+        display: none;
+    }
+
+    .eventscontainermobile{
+        display: flex;
+    }
+
+    .poster{
+        width:90%;
+        margin:20px 0px;
     }
 }
