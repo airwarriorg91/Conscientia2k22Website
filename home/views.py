@@ -15,4 +15,6 @@ def register(request):
     return render(request,'register.html')
 def contact(request):
     return render(request,'contacts.html')
+def login(request):
+    return render(request,'login.html')
     

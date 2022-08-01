@@ -16,7 +16,7 @@
 body {
   background: url(/static/assets/img/hero-bg.jpg) top center;
   color: #fff;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -351,16 +351,43 @@ hr{
     }
 }
 
+.formcontainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 100px;
+    height:80vh;
+    width:80%;
+    margin-bottom:100px;
+}
+.loginposter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.loginimage{
+    height:70%;
+}
+
+.vl {
+  margin-top: 80px;
+  border-left: 6px solid white;
+  height: 70vh;
+}
 
 .form{
     position: relative;
-    width:20rem;
+    display: flex;
+    justify-content: center;
     padding: 10px 0px;
-    margin-top: 170px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom:100px;
 }
 
-.form .formh1{
+.formh1{
     color:#FFF;
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
@@ -371,22 +398,22 @@ hr{
     position: relative;
 }
 
-.form .formp{
+.formp{
     color:#FFF;
     font-size: 15px;
     font-family: 'Nunito', sans-serif;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     text-align: left;
 }
 
-.form .formgroup{
+.formgroup{
     position:relative;
     height:3rem;
-    margin-bottom: 20px; 
+    margin-bottom:20px; 
 }
 
-.form .forminput{
+.forminput{
         position:absolute;
         top:0;
         left: 0;
@@ -398,24 +425,27 @@ hr{
         outline: none;
         padding: 1.25rem;
         background:none;
-        font-size:18px;
-        font-family: 'Nunito', sans-serif;
+        font-size:16px;
+        font-family: 'Nunito', sans-serif, "FontAwesome";
 }
 
-.form .forminput:hover{
+.forminput:hover{
         border-color: var(--primary-light);
 }
 
-.form .forminput:focus{
+.forminput:focus{
         border-color: var(--primary);
 }
 
-.form .formlabel{
+.formlabel{
+        display: flex;
+        justify-content: center;
         position:absolute;
-        left:1rem;
+        left:2.5rem;
         top:0.8rem;
         padding:0 0.5rem;
-        font-size:18px;
+        font-size:16px;
+        line-height: 24px;
         color:#fff;
         cursor: text;
         transition: top 200ms ease-in,
@@ -424,15 +454,17 @@ hr{
         font-family: 'Nunito', sans-serif;
 }
 
-.form .forminput:focus ~ .formlabel, 
-.form .forminput:not(:placeholder-shown).forminput:not(:focus) ~ .formlabel{
-    top:-0.5rem;
+.forminput:focus ~ .formlabel, 
+.forminput:not(:placeholder-shown).forminput:not(:focus) ~ .formlabel{
+    top:-0.7rem;
     font-size: 15px;
     left:0.8rem;
     background-color: #000;
+    border-radius: 0%;
 }
 
-.form .signup{
+
+.signup{
     display: block;
     margin-left: auto;
     padding: 0.75rem 2rem;
@@ -448,7 +480,7 @@ hr{
     transition: background-color 200ms ease-in;
 }
 
-.form .signup:hover{
+.signup:hover{
     background-color: var(--primary);
     color:#fff;
 }
@@ -664,7 +696,208 @@ hr{
     margin:20px 0px;   
 }
 
-@media (max-width: 768px){
+.aboutcontainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:80vh;
+    width:90%;
+    padding:10px 0px;
+    row-gap: 20px;
+}
+.aboutsection{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+    width:100%;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 10px 0px;
+}
+
+.aboutsocial{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    column-gap: 15px;
+    margin: 10px 0px;
+}
+
+.aboutposter{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+}
+
+.aboutimage{
+    height:70%;
+    margin: 10px 0px;
+}
+
+.aboutpara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height:80vh;
+    flex-direction:column;
+    margin: 10px 0px;
+}
+
+.aboutpara p{
+    color:#FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin:10px 0px;
+    line-height:24px;
+}
+
+.slider{
+    width: 750px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 80px;
+    flex-basis: 60%;
+}
+
+.slides{
+    width:500%;
+    height: 40%;
+    display:flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width:20%;
+    transition: 2s;
+}
+
+.slide img{
+    width:750px;
+    height:480px;
+}
+
+.navigation-manual{
+    margin-top:450px;
+    position:absolute;
+    width:750px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border:2px solid white;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+#radio2:checked ~ .first{
+    margin-left:-20%;
+}
+#radio3:checked ~ .first{
+    margin-left:-40%;
+}
+#radio4:checked ~ .first{
+    margin-left:-60%;
+}
+#radio5:checked ~ .first{
+    margin-left:-80%;
+}
+#radio6:checked ~ .first{
+    margin-left:-100%;
+}
+#radio7:checked ~ .first{
+    margin-left:-120%;
+}
+#radio8:checked ~ .first{
+    margin-left:-140%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display:flex;
+    width: 750px;
+    justify-content: center;
+    margin-top:450px;
+}
+
+.navigation-auto div{
+    border:2px solid white;
+    border-radius:10px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: white;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: white;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: white;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background: white;
+}
+#radio8:checked ~ .navigation-auto .auto-btn8{
+    background: white;
+}
+
+.aboutsocial .fa-solid, .aboutsocial .fa-brands{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color:var(--primary);
+    background:white;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px){
+
     .col{
         flex-basis: 100%;
         margin-bottom:10px;
@@ -682,4 +915,168 @@ hr{
         width:90%;
         margin:20px 0px;
     }
+
+    .aboutcontainer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        width:90%;
+        height:fit-content;
+    }
+
+    .aboutsection{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:fit-content;
+        margin:10px 0px;
+        padding:10px 0px;
+    }
+    .aboutpara p{
+        height:fit-content;
+        font-size: 17px;
+    }
+    .headingh2{
+        font-size: 20px;
+    }
+    .aboutposter{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        height:40vh;
+        margin-bottom: 10px;
+    }
+    .aboutimage{
+        height:80%;
+        margin: 10px 0px;
+    } 
+
+    .slider{
+        width: 100vw;
+    } 
+
+    .navigation-manual{
+        width:100vw;
+    }
+
+    .navigation-auto{
+        width:100vw;
+    }
+
+    .aboutsocial .fa-solid, .aboutsocial .fa-brands{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .formcontainer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+    .loginposter{
+        margin-bottom: 20px;
+    }
+
+    .form{
+        margin-bottom: 0px;
+        margin-top: 10px;
+        width: 90%;
+    }
+    .loginimage{
+        height:70vh;
+    }
+
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    
+    .eventscontainer{
+        display: none;
+    }
+
+    .eventscontainermobile{
+        display: flex;
+    }
+
+    .poster{
+        width:90%;
+        margin:20px 0px;
+    }
+
+    .aboutcontainer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        width:90%;
+        height:fit-content;
+    }
+
+    .aboutsection{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        margin:10px 0px;
+        padding:10px 0px;
+    }
+    .aboutpara p{
+        height:fit-content;
+        font-size: 17px;
+    }
+    .headingh2{
+        font-size: 20px;
+    }
+    .aboutposter{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        height:40vh;
+        margin-bottom: 10px;
+    }
+    .aboutimage{
+        height:80%;
+        margin: 10px 0px;
+    } 
+
+    .aboutsocial .fa-solid, .aboutsocial .fa-brands{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .formcontainer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%
+    }
+    .loginposter{
+        margin-bottom: 20px;
+    }
+
+    .form{
+        margin-bottom: 0px;
+        margin-top: 10px;
+        width: 50%;
+    }
+    .loginimage{
+        height:40%;
+    }
+}
+
+}
+
+

@@ -1,10 +1,98 @@
 {% extends "header.html" %}
 {% load static %}
-
 {% block menu_about_class %}is-active{% endblock %}
 {% block menu_about_class1 %}is-active{% endblock %}
 {% block content %}
-  
-     <h2> About Page </h2>
-
+    
+    <div class="aboutcontainer">
+        <div class="aboutsection">
+            <div class="aboutposter">
+                <img class="aboutimage" src="/static/assets/img/favicon.png">
+            </div>
+            
+            <div class="aboutpara">
+                <h2 class="headingh2">What is Conscientia ?</h2>
+                <p>Conscientia, one of the largest annual technical fests of South India provides a platform for one and all to witness one of the most exuberant and groundbreaking amalgamations of space science and technology with pure delight and ebullience. The festival is organized by the students of Indian Insititute of Space Science and Technology, Trivandrum. </p>
+                <p>With a plethora of events like motivating orations, state of the art technological exhibitions, cut-throat competitions and breathtaking performances for its audience, the four day extravaganza challenges you to step out of your comfort zone and challenge the school of conventional thinking.</p>
+            </div>
+        </div>
+        <h2 class="headingh2">Glimpses of previous editions</h2>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
+                <div class="slide first">
+                    <img src="static/assets/img/1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="static/assets/img/2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="static/assets/img/3.jpg">
+                </div>
+                <div class="slide">
+                    <img src="static/assets/img/4.jpg">
+                </div>
+                <div class="slide">
+                    <img src="static/assets/img/5.jpg">
+                </div>
+                <div class="slide">
+                    <img src="static/assets/img/6.jpg">
+                </div>
+                <div class="slide">
+                    <img src="static/assets/img/7.jpg">
+                </div>
+                <div class="slide">
+                    <img src="static/assets/img/8.jpg">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                    <div class="auto-btn7"></div>
+                    <div class="auto-btn8"></div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                    <label for="radio7" class="manual-btn"></label>
+                    <label for="radio8" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        <h2 class="headingh2">Our Team</h2>
+        <div class="aboutsection">
+            
+        </div>
+        <h2 class="headingh2">Our Social Media Handles</h2>
+        <div class="aboutsocial">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.facebook.com/Conscientia.iist"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/conscientia.iist/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCwgcWo-ash4KC4z8_5e9Haw"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+    document.getElementById('radio'+ counter).checked = true;
+    counter++;
+    if(counter>8){
+    counter=1;
+    }
+    }, 3000);
+    </script>
 {% endblock %}

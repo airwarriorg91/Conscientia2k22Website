@@ -16,3 +16,4 @@ window.addEventListener("load", function() {
     //hide the preloader
     preloader.style.display = "none";
 });
+

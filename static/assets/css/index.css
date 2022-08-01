@@ -154,7 +154,9 @@ h1, h2, h3, h4, h5, h6 {
     background:#fff;
     margin:35px 8px;
     cursor: pointer;
+    transition: 0.2s;
 }
+
 
 .container-fluid{
         height: 100vh;
