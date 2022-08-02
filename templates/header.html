@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/9dde0b24ee.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Lato&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header id="header">
@@ -19,7 +19,7 @@
         <div class="container">
           <img src="/static/logo_web1.png" alt="" style="height: 40px; margin:0px; padding:0px">
           <div class="menu">
-            <a href="/">Home</a>
+            <a href="/home" class="{% block menu_home_class %}{% endblock %}">Home</a>
             <a href="/about" class="{% block menu_about_class %}{% endblock %}">About</a>
             <a href="/events" class= "{% block menu_events_class %}{% endblock %}">Events</a>
             <a href="/contact" class="{% block menu_contact_class %}{% endblock %}">Contact</a>
@@ -34,12 +34,12 @@
         </div>
       </nav>
       <nav class="mobile-nav">
-        <a href="/">Home</a>
+        <a href="/home" class="{% block menu_home_class1 %}{% endblock %}">Home</a>
         <a href="/about" class="{% block menu_about_class1 %}{% endblock %}">About</a>
         <a href="/events" class= "{% block menu_events_class1 %}{% endblock %}">Events</a>
         <a href="/register" class="{% block menu_register_class1 %}{% endblock %}">Register</a>
         <a href="/contact" class="{% block menu_contact_class1 %}{% endblock %}">Contact</a>
-        <a href="#" class="login-button">Login</a>
+        <a href="/login" class="login-button">Login</a>
       </nav>
       </header><!-- /header -->
       <main>
@@ -65,7 +65,7 @@
           <div class="col">
             <h3> Links <div class="underline"><span></span></div></h3>
             <ul>
-              <li><a href="/">Home</a></li>
+              <li><a href="/home">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/events">Events</a></li>
               <li><a href="/register">Register</a></li>

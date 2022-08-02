@@ -6,7 +6,8 @@ def index(request):
     return render(request,'index1.html')
     #return HttpResponse("Hello World. This is my app.")
 # Create your views here.
-
+def home(request):
+   return render(request,'home.html')
 def about(request):
    return render(request,'about.html')
 def events(request):
