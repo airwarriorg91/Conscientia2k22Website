@@ -11,7 +11,7 @@ window.addEventListener('scroll', function(){
         mobile_menu.classList.toggle('is-active');
     });
 
-var preloader = document.querySelector("#preloader");
+var preloader = document.querySelector(".spinner-wrapper");
 window.addEventListener("load", function() {
     //hide the preloader
     preloader.style.display = "none";
