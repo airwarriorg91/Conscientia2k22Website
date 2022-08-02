@@ -130,17 +130,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border-radius: 15px;
 }
-#hero .btn-services {
-  border: 2px solid #fff;
-  background: #8C4A2D;
-  color: #fff;
-  border-radius: 99px;
-}
-#hero .btn-services:hover {
-  background: #E77D11;
-  border: 2px solid #fff;
-  border-radius: 15px;
-}
 
 #hero .social-icons .fa-solid, .social-icons .fa-brands{
     text-decoration: none;
