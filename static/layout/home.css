@@ -1,0 +1,39 @@
+.homecontainer{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    flex-direction: column;
+    height:80vh;
+    left:0;
+}
+
+.rowcontainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    height:20vh;
+    width:100%;
+    margin-bottom:10px;
+    grid-auto-flow: column;
+}
+
+.themesectiona{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.themesectionb{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+

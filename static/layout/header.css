@@ -1,9 +1,9 @@
 :root{
-    --primary: #8C4A2D;
+    --primary: #b6792b;
     --light: #ad5b38;
     --dark: #212121;
-    --primary-dark: #212121;
-    --primary-light: #E77D11;
+    --primary-dark: #6A381F;
+    --primary-light: #D45D21;
 }
 
 * {
@@ -159,7 +159,7 @@ h1{
 }
 
 .menu a:hover{
-    color: #E77D11;
+    color: var(--primary-light);
 }
 
 .menu a.login-button{
@@ -334,11 +334,13 @@ h1{
     padding: 20px;
     flex-direction: column;
 }
+
+
 footer{
     width: 100%;
     postion: absolute;
     bottom: 0;
-    background:linear-gradient(to right, #00093c, #2d0b00);
+    background:linear-gradient(to right,#17293B, #6a381f);
     color: #fff;
     padding: 50px;
     border-top-left-radius: 100px;
@@ -470,9 +472,10 @@ hr{
     grid-template-columns: 50% 50%;
     column-gap: 100px;
     height:80vh;
-    width:80%;
+    width:100%;
     margin-bottom:100px;
 }
+
 .loginposter{
     display: flex;
     justify-content: center;
@@ -602,6 +605,7 @@ hr{
 span{
   position: relative;
   margin-left: auto;
+  margin-right: 20px;
   display: inline-flex;
   width: 100px;
   height: 45px;
@@ -699,6 +703,7 @@ span a:hover{
     margin-bottom: 13px;
     position: relative;
     font-weight: 700;
+    text-shadow: 2px 2px 0px var(--primary)
 }
 
 .headingh2::after {
@@ -1078,8 +1083,9 @@ span a:hover{
         justify-content:center;
         align-items: center;
         text-align: center;
-        width:90%;
+        width:100%;
         height:fit-content;
+        left:0;
     }
 
     .aboutsection{
@@ -1136,6 +1142,7 @@ span a:hover{
         align-items: center;
         justify-content: center;
         height: fit-content;
+        width:100vw;
     }
     .loginposter{
         margin-bottom: 20px;
@@ -1144,10 +1151,12 @@ span a:hover{
     .form{
         margin-bottom: 0px;
         margin-top: 10px;
-        width: 90%;
+        width: 70%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .loginimage{
-        height:70vh;
+        width: 90%;
     }
 
 }
@@ -1230,7 +1239,7 @@ span a:hover{
         width: 50%;
     }
     .loginimage{
-        height:40%;
+        width:90%;
     }
 }
 
